@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Home",
+    "items": [
+      { "label": "Booking", "to": "/hotels" },
+      { "label": "About Us", "to": "/about-us" }
+    ]
+  },
+  {
+    "title": "Get in Touch",
+    "items": [{ "label": "Contact", "to": "/contact" }]
+  }
+]

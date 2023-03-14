@@ -1,0 +1,92 @@
+[
+  {
+    "id": "0",
+    "title": "Burj Al Arab",
+    "location": "Dubai",
+    "price": 1.331,
+    "rate": 4.8,
+    "image": "/images/hotels/burj-al-arab.avif",
+    "description": "Burj Al Arab Jumeirah is undoubtedly one of the most famous landmarks and tourist attractions in Dubai, and is renowned for its 'seven-star status'. The luxury record-breaking all-suite hotel includes a range of fine-dining restaurants, incredible beaches and the expansive Burj Al Arab Terrace.",
+    "link": "https://www.visitdubai.com/en/places-to-visit/burj-al-arab?DTCM-SN+%7C+Brazil+%7C+Search+%7C+EN+%7C+Pillars&gclid=Cj0KCQiAx6ugBhCcARIsAGNmMbhLeSgsl-xsL7VTFUOsEO3Xn5kktjlecKIPcR2SoB0vPp4lgbKb8uwaAjBNEALw_wcB&gclsrc=aw.ds"
+  },
+  {
+    "id": "1",
+    "title": "The Plaza Hotel",
+    "location": "New York City",
+    "price": 1.242,
+    "rate": 4.7,
+    "image": "/images/hotels/plaza-hotel.jpg",
+    "description": "The Plaza Hotel is a landmarked 20-story luxury hotel and condominium apartment building in the Midtown Manhattan neighborhood of New York City. Located on the corner of Fifth Avenue and Central Park South, it opened in 1907 and is one of the most prestigious and well-known hotels in the world. The Plaza Hotel has a long and storied history that dates back to its opening in 1907. It was designed by Henry Janeway Hardenbergh, who also designed the nearby Waldorf Astoria Hotel. The hotel quickly became a popular destination for celebrities, dignitaries, and other affluent guests. In 1945, it was purchased by Conrad Hilton, who renovated it extensively. In 1988, Donald Trump purchased the hotel for $390 million and sold it in 1995 for $325 million. Since then, it has changed hands several times, with numerous renovations taking place over the years to keep up with modern standards. Today, The Plaza Hotel remains an iconic symbol of luxury and sophistication in New York City.",
+    "link": "https://www.theplazany.com/"
+  },
+  {
+    "id": "2",
+    "title": "Marina Bay Sands",
+    "location": "Singapore",
+    "price": 300,
+    "rate": 4.6,
+    "image": "/images/hotels/marina-bay.webp",
+    "description": "Marina Bay Sands is a resort complex in Singapore, owned by the Las Vegas Sands Corporation. It includes a hotel, casino, convention center, shopping mall, museum, two theaters, and an observation deck. The resort was designed by Moshe Safdie Architects and opened in 2010. The Marina Bay Sands is the most expensive building ever built in Singapore. It cost $5.7 billion to construct and includes 2,561 hotel rooms and suites across three 55-story towers. The resort also features a 2,500 seat theater, an ArtScience Museum with 21 galleries of interactive exhibits, a casino with 500 tables and 1,600 slot machines, a shopping mall with over 300 stores and restaurants, two floating Crystal Pavilions that house exhibition space and banquet halls, an infinity pool on the 57th floor of the hotel tower that overlooks the city skyline of Singapore.",
+    "link": "https://www.marinabaysands.com"
+  },
+  {
+    "id": "3",
+    "title": "Brown's Hotel",
+    "location": "London",
+    "price": 1.201,
+    "rate": 4.6,
+    "image": "/images/hotels/brown's-hotel.webp",
+    "description": "Brown's Hotel is a luxury hotel located in London, England. It was founded in 1837 by James and Sarah Brown and has been a favorite of royalty, celebrities, and dignitaries ever since. The hotel has undergone several renovations over the years, including a major refurbishment in 2004. Today, the hotel features luxurious rooms and suites, as well as a range of amenities such as a spa, fitness center, and fine dining restaurant. Brown's Hotel is renowned for its impeccable service and attention to detail, making it one of the most sought-after hotels in London.",
+    "link": "https://www.lartisien.com/hotel/browns-hotel?gclid=Cj0KCQiAx6ugBhCcARIsAGNmMbgWEbADerDDFzjhYrTkLrG2IPuGJdx4wrYxvkQeGJFPpULSDxecbjYaAsdWEALw_wcB"
+  },
+  {
+    "id": "4",
+    "title": "Atlantis Bahamas",
+    "location": "Nassau",
+    "price": 1.1,
+    "rate": 4.5,
+    "image": "/images/hotels/atlantis-bahamas.jpg",
+    "description": "The Atlantis Bahamas is a resort located on Paradise Island in the Bahamas. It opened in 1998 and was built by South African hotel magnate Sol Kerzner. The resort features a variety of activities, including a 141-acre water park, 11 pools, an aquarium, and a casino. It also has 21 restaurants and 19 bars. The resort is known for its unique architecture, which includes the iconic Mayan Temple waterslide. The resort has hosted numerous celebrities over the years, including Oprah Winfrey, Justin Bieber, and Robert De Niro. In addition to its luxurious accommodations and amenities, the resort also offers guests a variety of activities such as snorkeling trips, dolphin encounters, and beach excursions.",
+    "link": "https://www.atlantisbahamas.com/"
+  },
+  {
+    "id": "5",
+    "title": "The Beverly Hills Hotel",
+    "location": "Beverly Hills",
+    "price": 1.395,
+    "rate": 4.5,
+    "image": "/images/hotels/beverly-hills.jpg",
+    "description": "The Beverly Hills Hotel, located in Beverly Hills, California, has a long and storied history. It was first opened in 1912 by Margaret J. Anderson and her husband, Charles E. Anderson. The hotel was originally known as the Beverly Hills Hotel and Bungalows, and it quickly became a popular destination for Hollywood celebrities and other high-profile guests. Today, The Beverly Hills Hotel is still one of Los Angeles' most iconic hotels and continues to be a popular destination for celebrities and other high-profile guests from around the world.",
+    "link": "https://www.visitcalifornia.com/br/attraction/beverly-hills-hotel"
+  },
+  {
+    "id": "6",
+    "title": "Copacabana Palace",
+    "location": "Rio de Janeiro",
+    "price": 470,
+    "rate": 4.5,
+    "image": "/images/hotels/copacabana-palace.webp",
+    "description": "The Copacabana Palace was built in 1923 by the Brazilian architect Joseph Gire. It was designed to be a luxurious hotel, with a grand lobby and a large pool. The hotel quickly became a popular destination for the wealthy and famous, hosting celebrities such as Frank Sinatra, Ava Gardner, and Elizabeth Taylor. It was also the site of many important political events, including the signing of the Rio Treaty in 1947. In the 1950s, it underwent extensive renovations to modernize its facilities and add new amenities. The hotel has since become one of Rio de Janeiro's most iconic landmarks and continues to be a popular destination for travelers from around the world.",
+    "link": "https://copacabana.com/hotel-copacabana-palace"
+  },
+  {
+    "id": "7",
+    "title": "The Brando",
+    "location": "Tahiti",
+    "price": 980,
+    "rate": 4.4,
+    "image": "/images/hotels/the-brando.jpg",
+    "description": "The Brando is a luxury resort located on the private island of Tetiaroa in French Polynesia. It was founded by Marlon Brando, the iconic American actor, in 1967. The resort opened its doors to guests in 2014, after a long and meticulous renovation process that aimed to preserve the island's natural beauty and create an eco-friendly luxury experience. The resort offers 35 villas with private plunge pools, as well as a spa, fitness center, and two restaurants. Guests can also enjoy activities such as snorkeling, kayaking, and bird watching. The Brando is committed to sustainability and has been recognized for its efforts to reduce its environmental impact.",
+    "link": "https://thebrando.com"
+  },
+  {
+    "id": "8",
+    "title": "La Mamounia",
+    "location": "Marrakech",
+    "price": 745,
+    "rate": 4.4,
+    "image": "/images/hotels/la-mamounia.jpg",
+    "description": "La Mamounia is a luxurious hotel located in Marrakech, Morocco. It was founded in 1923 by the Alaouite Sultan Moulay Youssef and was named after his mother, Lalla Mamounia. The hotel has been a favorite of royalty and celebrities alike, including Winston Churchill, who famously painted its gardens in 1948. Over the years, La Mamounia has undergone several renovations and expansions, most recently in 2009 when it was completely renovated to its original grandeur. Today, La Mamounia is one of the most luxurious hotels in the world and continues to be a favorite destination for travelers from all over the globe.",
+    "link": "https://www.lhw.com"
+  }
+]

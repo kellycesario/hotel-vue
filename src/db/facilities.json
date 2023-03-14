@@ -1,0 +1,50 @@
+[
+  {
+    "icon": "#workspace",
+    "label": "Private Workspace",
+    "id": 0,
+    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur officia est quod optio repudiandae voluptatem quia a inventore ullam nostrum vel, reprehenderit culpa quas pariatur ad, cumque molestias iure. Mollitia?"
+  },
+  {
+    "icon": "#parking-area",
+    "label": "Parking Area",
+    "id": 1,
+    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur officia est quod optio repudiandae voluptatem quia a inventore ullam nostrum vel, reprehenderit culpa quas pariatur ad, cumque molestias iure. Mollitia?"
+  },
+  {
+    "icon": "#cappuccino",
+    "label": "Breakfast",
+    "id": 2,
+    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur officia est quod optio repudiandae voluptatem quia a inventore ullam nostrum vel, reprehenderit culpa quas pariatur ad, cumque molestias iure. Mollitia?"
+  },
+  {
+    "icon": "#wifi",
+    "label": "Free Wifi",
+    "id": 3,
+    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur officia est quod optio repudiandae voluptatem quia a inventore ullam nostrum vel, reprehenderit culpa quas pariatur ad, cumque molestias iure. Mollitia?"
+  },
+  {
+    "icon": "#flash",
+    "label": "Free Electricity",
+    "id": 4,
+    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur officia est quod optio repudiandae voluptatem quia a inventore ullam nostrum vel, reprehenderit culpa quas pariatur ad, cumque molestias iure. Mollitia?"
+  },
+  {
+    "icon": "#swimmer",
+    "label": "Swimming Pool",
+    "id": 5,
+    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur officia est quod optio repudiandae voluptatem quia a inventore ullam nostrum vel, reprehenderit culpa quas pariatur ad, cumque molestias iure. Mollitia?"
+  },
+  {
+    "icon": "#dumbell",
+    "label": "Exercise Space",
+    "id": 6,
+    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur officia est quod optio repudiandae voluptatem quia a inventore ullam nostrum vel, reprehenderit culpa quas pariatur ad, cumque molestias iure. Mollitia?"
+  },
+  {
+    "icon": "#happy-hour",
+    "label": "Happy Hour",
+    "id": 7,
+    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur officia est quod optio repudiandae voluptatem quia a inventore ullam nostrum vel, reprehenderit culpa quas pariatur ad, cumque molestias iure. Mollitia?"
+  }
+]
