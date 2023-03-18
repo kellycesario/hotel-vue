@@ -19,7 +19,7 @@ import discover from "/images/discover.png";
       industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum
       is simply dummy text of the printing and typesetting industry."
         />
-        <Button label="Explore More" to="/about-us" />
+        <Button label="Explore More" to="#/about-us" />
       </div>
     </article>
   </section>

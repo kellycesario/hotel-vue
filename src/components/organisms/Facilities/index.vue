@@ -12,7 +12,7 @@ import FacilitiesDetails from "@molecules/FacilitiesDetails/index.vue";
       <Text
         content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy "
       />
-      <Button label="Contact Now" to="/contact" />
+      <Button label="Contact Now" to="#/contact" />
     </article>
     <FacilitiesList />
   </section>

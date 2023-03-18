@@ -14,7 +14,7 @@ import banner from "/images/hero-banner2.jpg";
   <CardsWrapper
     title="These are our Most Popular Hotels"
     label="Contact Now"
-    to="/contact"
+    to="#/contact"
     startIndex="0"
     endIndex="10"
   />

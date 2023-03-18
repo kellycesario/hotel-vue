@@ -20,7 +20,7 @@ const cards = defineProps({
   },
   to: {
     type: String,
-    default: "/hotels",
+    default: "#/hotels",
   },
   startIndex: {
     type: String,
