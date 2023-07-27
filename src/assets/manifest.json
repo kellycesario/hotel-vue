@@ -2,7 +2,7 @@
   "name": "Hotel Vue",
   "description": "The project aims to provide a practical learning experience for Vue.js enthusiasts who want to deepen their understanding of Vue.js and its ecosystem while building a functional and visually appealing hotel-themed website.",
   "short_name": "h-vue",
-  "start_url": "/#",
+  "start_url": "https://hotel-vue.vercel.app/#/",
   "theme_color": "#1c8759",
   "background_color": "#FFFFFF",
   "display": "standalone",
