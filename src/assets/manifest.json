@@ -8,7 +8,7 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "src/assets/icons/sm.png",
+      "src": "https://github.com/kellycesario/vue-components/blob/370820f847708bbc84740e7348ac847da6ec9c4f/src/assets/icons/sm.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any"
