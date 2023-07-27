@@ -2,19 +2,19 @@
   "name": "Hotel Vue",
   "description": "The project aims to provide a practical learning experience for Vue.js enthusiasts who want to deepen their understanding of Vue.js and its ecosystem while building a functional and visually appealing hotel-themed website.",
   "short_name": "h-vue",
-  "start_url": ".",
+  "start_url": "/",
   "theme_color": "#1c8759",
   "background_color": "#FFFFFF",
   "display": "standalone",
   "icons": [
     {
-      "src": "/images/hotel-small.png",
+      "src": "images/hotel-small.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/images/hotel-large.png",
+      "src": "images/hotel-large.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
