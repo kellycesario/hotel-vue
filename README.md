@@ -1,4 +1,4 @@
-# Vue Components
+# Hotel Vue
 
 ## Project Description
 
