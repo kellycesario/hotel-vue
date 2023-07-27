@@ -37,11 +37,17 @@ function installApp() {
   }
 }
 
-function isSafariOrSamsungInternet() {
-  const userAgent = window.navigator.userAgent.toLowerCase()
-  return userAgent.includes("safari") || userAgent.includes("samsung")
+function isSafari() {
+  return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 }
 
+function isSamsungInternet() {
+  return /samsung/.test(navigator.userAgent);
+}
+
+function isSafariOrSamsungInternet() {
+  return isSafari() || isSamsungInternet()
+}
 const showInstructions = ref(isSafariOrSamsungInternet())
 
 onMounted(() => {
@@ -59,16 +65,6 @@ onMounted(() => {
     })
   }
 })
-
-function isSafari() {
-  const userAgent = window.navigator.userAgent.toLowerCase()
-  return userAgent.includes("safari") && !userAgent.includes("chrome")
-}
-
-function isSamsungInternet() {
-  const userAgent = window.navigator.userAgent.toLowerCase()
-  return userAgent.includes("samsung")
-}
 </script>
 
 <template>
