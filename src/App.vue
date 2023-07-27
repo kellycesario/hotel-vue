@@ -2,6 +2,7 @@
 import Svg from "@ions/Svg/index.vue";
 import Header from "@organisms/Header/index.vue";
 import Footer from "@organisms/Footer/index.vue";
+import Modal from "@molecules/Modal/index.vue";
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import Footer from "@organisms/Footer/index.vue";
     <Header />
     <RouterView />
     <Footer />
+    <Modal />
   </section>
 </template>
 
