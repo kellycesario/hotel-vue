@@ -3,7 +3,6 @@ import Button from "@atoms/Button/index.vue"
 import { onMounted, ref } from "vue"
 
 const showModal = ref(shouldShowModal())
-
 let deferredPrompt = null
 
 function shouldShowModal() {
@@ -82,11 +81,11 @@ function isSamsungInternet() {
     </div>
   </article>
 
-  <div v-if="showInstructions">
-    <p>To install the app manually, follow these instructions for your browser:</p>
+  <article v-else>
     <p v-if="isSafari()">Instructions for Safari...</p>
     <p v-else-if="isSamsungInternet()">Instructions for Samsung Internet...</p>
-  </div>
+    <p v-else>To install the app manually, follow these instructions for your browser...</p>
+  </article>
 </template>
 
 <style scoped lang="scss">
