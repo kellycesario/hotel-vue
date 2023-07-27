@@ -5,7 +5,7 @@
   "start_url": "/#/",
   "theme_color": "#1c8759",
   "background_color": "#FFFFFF",
-  "display": "fullscreen",
+  "display": "standalone",
   "icons": [
     {
       "src": "/images/hotel-small.png",
