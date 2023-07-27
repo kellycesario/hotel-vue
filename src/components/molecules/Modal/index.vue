@@ -2,19 +2,32 @@
 import Button from "@atoms/Button/index.vue"
 import { onMounted, ref } from "vue"
 
-const showModal = ref(false)
+const showModal = ref(shouldShowModal())
+
 let deferredPrompt = null
+
+function shouldShowModal() {
+  if (
+    window.matchMedia("(display-mode: standalone)").matches ||
+    window.navigator.standalone
+  ) {
+    return false
+  }
+  return localStorage.getItem("showModal") !== "false"
+}
 
 const closeModal = () => {
   showModal.value = false
+  localStorage.setItem("showModal", "false")
 }
 
-const installApp = () => {
+function installApp() {
   if (deferredPrompt) {
     deferredPrompt.prompt()
     deferredPrompt.userChoice.then((choiceResult) => {
       if (choiceResult.outcome === "accepted") {
         console.log("User accepted the install prompt")
+        localStorage.setItem("showModal", "false")
       } else {
         console.log("User dismissed the install prompt")
       }
@@ -25,10 +38,13 @@ const installApp = () => {
 }
 
 onMounted(() => {
-  if (
-    !window.matchMedia("(display-mode: standalone)").matches &&
-    !window.navigator.standalone
-  ) {
+  window.addEventListener("appinstalled", () => {
+    console.log("App has been installed as a PWA")
+    localStorage.setItem("showModal", "false")
+    showModal.value = false
+  })
+
+  if (showModal.value) {
     window.addEventListener("beforeinstallprompt", (e) => {
       e.preventDefault()
       deferredPrompt = e
