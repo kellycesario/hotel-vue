@@ -2,6 +2,12 @@
 import Button from "@atoms/Button/index.vue"
 import { onMounted, ref } from "vue"
 
+// const verifyDevice = defineProps({
+//   isRegular: {
+//     type: Boolean,
+//   },
+// })
+
 const showModal = ref(shouldShowModal())
 let deferredPrompt = null
 
@@ -36,11 +42,6 @@ function installApp() {
   }
 }
 
-function isSafariOrSamsungInternet() {
-  const userAgent = window.navigator.userAgent.toLowerCase()
-  return userAgent.includes("safari") || userAgent.includes("samsung")
-}
-
 const showInstructions = ref(isSafariOrSamsungInternet())
 
 onMounted(() => {
@@ -59,6 +60,13 @@ onMounted(() => {
   }
 })
 
+const isChrome = !(isSafari() || isSamsungInternet())
+
+function isSafariOrSamsungInternet() {
+  const userAgent = window.navigator.userAgent.toLowerCase()
+  return userAgent.includes("safari") || userAgent.includes("samsung")
+}
+
 function isSafari() {
   const userAgent = window.navigator.userAgent.toLowerCase()
   return userAgent.includes("safari") && !userAgent.includes("chrome")
@@ -72,19 +80,21 @@ function isSamsungInternet() {
 
 <template>
   <article v-if="showModal" class="modal">
-    <div class="modal__content">
+    <div v-if="isChrome" class="modal__content">
       <p>Install the app to get the best experience!</p>
       <div class="modal__buttons">
         <Button isButton @click="installApp" label="Install App" />
         <Button isButton @click="closeModal" label="Close" />
       </div>
     </div>
-  </article>
 
-  <article v-else>
-    <p v-if="isSafari()">Instructions for Safari...</p>
-    <p v-else-if="isSamsungInternet()">Instructions for Samsung Internet...</p>
-    <p v-else>To install the app manually, follow these instructions for your browser...</p>
+    <div v-else class="modal__samsungIos">
+      <p v-if="isSafari()">Instructions for Safari...</p>
+      <p v-else-if="isSamsungInternet()">Instructions for Samsung Internet...</p>
+      <p v-else>
+        To install the app manually, follow these instructions for your browser...
+      </p>
+    </div>
   </article>
 </template>
 
