@@ -3,6 +3,7 @@ import Button from "@atoms/Button/index.vue"
 import { onMounted, ref } from "vue"
 
 const showModal = ref(shouldShowModal())
+
 let deferredPrompt = null
 
 function shouldShowModal() {
@@ -36,20 +37,9 @@ function installApp() {
   }
 }
 
-function isSafari() {
-  return (
-    /^((?!chrome|android).)*safari/i.test(navigator.userAgent) &&
-    !navigator.userAgent.includes("CriOS") &&
-    !navigator.userAgent.includes("FxiOS")
-  )
-}
-
-function isSamsungInternet() {
-  return /samsung/.test(navigator.userAgent)
-}
-
 function isSafariOrSamsungInternet() {
-  return isSafari() || isSamsungInternet()
+  const userAgent = window.navigator.userAgent.toLowerCase()
+  return userAgent.includes("safari") || userAgent.includes("samsung")
 }
 
 const showInstructions = ref(isSafariOrSamsungInternet())
@@ -61,7 +51,7 @@ onMounted(() => {
     showModal.value = false
   })
 
-  if (showModal.value && "beforeinstallprompt" in window) {
+  if (showModal.value) {
     window.addEventListener("beforeinstallprompt", (e) => {
       e.preventDefault()
       deferredPrompt = e
@@ -69,6 +59,16 @@ onMounted(() => {
     })
   }
 })
+
+function isSafari() {
+  const userAgent = window.navigator.userAgent.toLowerCase()
+  return userAgent.includes("safari") && !userAgent.includes("chrome")
+}
+
+function isSamsungInternet() {
+  const userAgent = window.navigator.userAgent.toLowerCase()
+  return userAgent.includes("samsung")
+}
 </script>
 
 <template>
