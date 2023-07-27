@@ -2,7 +2,7 @@
 import Button from "@atoms/Button/index.vue"
 import { onMounted, ref } from "vue"
 
-const showModal = ref(true)
+const showModal = ref(false)
 let deferredPrompt = null
 
 const closeModal = () => {
