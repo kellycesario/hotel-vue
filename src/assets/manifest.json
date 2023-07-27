@@ -8,13 +8,13 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "https://github.com/kellycesario/hotel-vue/blob/main/src/assets/icons/hotel-small.png",
+      "src": "https://i.ibb.co/X4cvc69/hotel-small.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "src/assets/icons/l.png",
+      "src": "https://i.ibb.co/373jt0F/hotel-large.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
