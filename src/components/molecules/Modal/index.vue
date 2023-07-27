@@ -3,7 +3,6 @@ import Button from "@atoms/Button/index.vue"
 import { onMounted, ref } from "vue"
 
 const showModal = ref(shouldShowModal())
-
 let deferredPrompt = null
 
 function shouldShowModal() {
@@ -38,16 +37,21 @@ function installApp() {
 }
 
 function isSafari() {
-  return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  return (
+    /^((?!chrome|android).)*safari/i.test(navigator.userAgent) &&
+    !navigator.userAgent.includes("CriOS") &&
+    !navigator.userAgent.includes("FxiOS")
+  )
 }
 
 function isSamsungInternet() {
-  return /samsung/.test(navigator.userAgent);
+  return /samsung/.test(navigator.userAgent)
 }
 
 function isSafariOrSamsungInternet() {
   return isSafari() || isSamsungInternet()
 }
+
 const showInstructions = ref(isSafariOrSamsungInternet())
 
 onMounted(() => {
@@ -57,7 +61,7 @@ onMounted(() => {
     showModal.value = false
   })
 
-  if (showModal.value) {
+  if (showModal.value && "beforeinstallprompt" in window) {
     window.addEventListener("beforeinstallprompt", (e) => {
       e.preventDefault()
       deferredPrompt = e
