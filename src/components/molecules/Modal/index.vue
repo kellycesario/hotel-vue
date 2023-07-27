@@ -37,6 +37,13 @@ function installApp() {
   }
 }
 
+function isSafariOrSamsungInternet() {
+  const userAgent = window.navigator.userAgent.toLowerCase()
+  return userAgent.includes("safari") || userAgent.includes("samsung")
+}
+
+const showInstructions = ref(isSafariOrSamsungInternet())
+
 onMounted(() => {
   window.addEventListener("appinstalled", () => {
     console.log("App has been installed as a PWA")
@@ -52,6 +59,16 @@ onMounted(() => {
     })
   }
 })
+
+function isSafari() {
+  const userAgent = window.navigator.userAgent.toLowerCase()
+  return userAgent.includes("safari") && !userAgent.includes("chrome")
+}
+
+function isSamsungInternet() {
+  const userAgent = window.navigator.userAgent.toLowerCase()
+  return userAgent.includes("samsung")
+}
 </script>
 
 <template>
@@ -64,6 +81,12 @@ onMounted(() => {
       </div>
     </div>
   </article>
+
+  <div v-if="showInstructions">
+    <p>To install the app manually, follow these instructions for your browser:</p>
+    <p v-if="isSafari()">Instructions for Safari...</p>
+    <p v-else-if="isSamsungInternet()">Instructions for Samsung Internet...</p>
+  </div>
 </template>
 
 <style scoped lang="scss">
