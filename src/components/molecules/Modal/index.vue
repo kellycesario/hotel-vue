@@ -2,12 +2,6 @@
 import Button from "@atoms/Button/index.vue"
 import { onMounted, ref } from "vue"
 
-// const verifyDevice = defineProps({
-//   isRegular: {
-//     type: Boolean,
-//   },
-// })
-
 const showModal = ref(shouldShowModal())
 let deferredPrompt = null
 
@@ -42,11 +36,8 @@ function installApp() {
   }
 }
 
-const showInstructions = ref(isSafariOrSamsungInternet())
-
 onMounted(() => {
   window.addEventListener("appinstalled", () => {
-    console.log("App has been installed as a PWA")
     localStorage.setItem("showModal", "false")
     showModal.value = false
   })
@@ -60,12 +51,7 @@ onMounted(() => {
   }
 })
 
-const isChrome = !(isSafari() || isSamsungInternet())
-
-function isSafariOrSamsungInternet() {
-  const userAgent = window.navigator.userAgent.toLowerCase()
-  return userAgent.includes("safari") || userAgent.includes("samsung")
-}
+const isCrossPlatformBrowser = !(isSafari() || isSamsungInternet())
 
 function isSafari() {
   const userAgent = window.navigator.userAgent.toLowerCase()
@@ -80,7 +66,7 @@ function isSamsungInternet() {
 
 <template>
   <article v-if="showModal" class="modal">
-    <div v-if="isChrome" class="modal__content">
+    <div v-if="isCrossPlatformBrowser" class="modal__content">
       <p>Install the app to get the best experience!</p>
       <div class="modal__buttons">
         <Button isButton @click="installApp" label="Install App" />
@@ -88,7 +74,7 @@ function isSamsungInternet() {
       </div>
     </div>
 
-    <div v-else class="modal__samsungIos">
+    <div v-else class="modal__content">
       <p v-if="isSafari()">Instructions for Safari...</p>
       <p v-else-if="isSamsungInternet()">Instructions for Samsung Internet...</p>
       <p v-else>
