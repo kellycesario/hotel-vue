@@ -80,6 +80,7 @@ function isSamsungInternet() {
       <p v-else>
         To install the app manually, follow these instructions for your browser...
       </p>
+      <Button isButton @click="closeModal" label="Close" />
     </div>
   </article>
 </template>
