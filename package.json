@@ -10,6 +10,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@hotjar/browser": "^1.0.9",
     "@vueuse/core": "^9.13.0",
     "pinia": "^2.0.33",
     "vue": "^3.2.47",
